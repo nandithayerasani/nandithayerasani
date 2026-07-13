@@ -27,7 +27,7 @@ About Me:
 
 
 ### 🌿 Outside Work
-**Perfumery**: I have a deep fascination with the art and chemistry of perfumery—exploring how subtle notes blend to create a sensory narrative. ( https://instagram.com/suresometimes).
+**Perfumery**: I have a deep fascination with the art and chemistry of perfumery—exploring how subtle notes blend to create a sensory narrative. ( https://instagram.com/sure.sometimes).
 **Photography & Travel**: Catching local life and landscapes through a lens wherever I go. You can see my visual travel journal at (https://instagram.com/nandithareddyy).
 
 ### 📫 Connect
