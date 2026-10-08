@@ -1,5 +1,5 @@
 <h1 align="center">Nanditha Yerasani</h1>
-<p align="center"><b>Data Analyst | QA Engineer turned Data Scientist | 2+ Years at Deloitte</b></p>
+<p align="center"><b>Data Analyst | QA Engineer turned Data Scientist</b></p>
 
 <p align="center">
   <a href="https://linkedin.com/in/nanditha-yerasani"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
@@ -14,41 +14,36 @@
 I'm a data professional with a QA engineer's instinct for what breaks — and I use that instinct to catch the mistakes that make models and dashboards *look* right when they aren't.
 
 - 🎓 **M.S. in Data Science**, University of Texas at Arlington (May 2026)
-- 💼 **2+ years at Deloitte Consulting**, progressing from support to Subject Matter Expert on **COFTA**, an AI/ML test automation platform used by Fortune 500 clients
 - 📊 My work spans EDA, model development, and turning findings into stakeholder-ready visuals with **Python, MS SQL, and Power BI**
 - 🕵️ My edge: a QA background means I default to *distrusting* a clean result until I've checked the split, the leakage, and the assumptions behind it
 - 📌 Currently seeking **Data Analyst** roles (Business Analyst / SDET also welcome)
 
 ---
 
-### 🏆 Impact, By the Numbers
-
-| | |
-|---|---|
-| **60%** faster QA cycle time (5 days → 2 days) | via a framework redesign at Deloitte |
-| **65%** regression coverage | delivered on a healthcare client engagement |
-| **45+** defects identified and reported | across enterprise-scale test cycles |
-| **30%** faster test execution | after re-engineering the test run mode |
-| **1** Spot Award | for POC delivery excellence (2023) |
-
----
-
 ### 🚀 Featured Projects
 
-**📦 Retail Demand Forecasting** — *XGBoost, LightGBM, SHAP*
-Forecasted demand across 10 stores and 25 products. Caught an AI coding assistant defaulting to a random train/test split on time-series data — a silent leak that would've inflated accuracy since the spec never said "time-series" outright. Corrected it to a time-based split and rebuilt the pipeline before it shipped a wrong answer with high confidence.
+**📦 Retail Demand Forecasting** — *LightGBM, XGBoost, SHAP, Streamlit*
+> **Problem:** Forecast weekly demand across 10 stores × 25 products to reduce stockouts and overstock.
+- Engineered lag, rolling-window, EWM, and cyclical features on 26,250 weekly observations; selected LightGBM as the final model (MAPE 14.88%, MAE 9.76)
+- Caught an AI coding assistant using a random train/test split on time-series data — a silent leak through lag features — and rebuilt the pipeline with a time-based split
+- Added SHAP explainability and stockout risk detection, delivered as an interactive multipage Streamlit forecasting application
 
-**🎓 StudyBridge — Peer Tutoring Platform** — *React, Node.js, MySQL, Postman*
-QA lead on a student-tutor matching platform. Owned requirement analysis, API testing, and data integrity validation across booking, messaging, and payment flows — the parts of the system where a silent bug costs someone real money or a missed class.
+**🎓 StudyBridge — Peer Tutoring Platform** — *React, Node.js, MySQL, Postman, OpenAI API*
+> **Problem:** In a platform handling bookings, messaging, and payments, a silent bug can cost a student real money or a missed session.
+- Designed the MySQL database schema and the UI, then led QA across the full stack: requirement analysis, UI, API (Postman), database, and performance testing
+- Validated data integrity by querying MySQL after every booking, messaging, and payment action, confirming that what the UI displayed matched what was actually stored
+- Tested the OpenAI-powered features for non-deterministic LLM output, where the same input can return different responses and exact-match assertions break
 
 **✈️ Flight Delay Prediction** — *Random Forest, LSTM*
-Built classification models to predict flight departure delays from historical flight and weather data, with heavy emphasis on cleaning and feature engineering before modeling — not after.
-
-**🔧 QA/Release Management at Deloitte**
-Noticed two teams on a healthcare client engagement independently writing overlapping, non-shareable test scripts — duplicated work no one had flagged. Raised it, and it became the basis for a release management feature letting teams share instead of duplicate. Paired with a framework redesign, this cut QA cycle time by 60%.
+> **Problem:** Predict flight delays from 180K U.S. domestic flight records (BTS, 2017–2018) enriched with hourly weather data.
+- Tuned a Random Forest with RandomizedSearchCV, encoding airports as lat/long coordinates instead of high-cardinality one-hot features
+- Built an LSTM on weather and time sequences to compare a sequential model against a tabular one
+- On review, traced Random Forest's 97% accuracy to leakage (departure delay used to predict arrival delay) and found the LSTM had collapsed to the majority class
 
 **🛰️ River Stream Identification via Satellite Imagery** — *SVM, Random Forest, U-Net, ResNet*
-Applied classical ML and deep learning to detect river networks from satellite imagery for water resource management use cases.
+> **Problem:** Manually mapping river networks from satellite imagery is slow, which limits water resource management at scale.
+- Compared classical ML (SVM, Random Forest) against deep learning segmentation (U-Net, ResNet) for detecting river networks
+- Evaluated where pixel-level segmentation outperformed classical classifiers on this imagery
 
 ---
 
@@ -64,4 +59,4 @@ I keep two Instagram pages going — one for **[perfumery](https://instagram.com
 
 ---
 
-<p align="center"><i>Thanks for stopping by — always happy to talk data, QA, or the overlap between the two.</i></p>
+<p align="center"><i>Thanks for stopping by — always happy to talk Data, QA, or the overlap between the two.</i></p>
